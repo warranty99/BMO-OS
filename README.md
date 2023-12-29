@@ -5,3 +5,7 @@ HOW TO USE:
 First off, you're gonna need a GPT API-KEY and an ELEVENLABS API-KEY, in this code i removed the keys, insert your own.
 To add your CHAT-GPT Key, add a new enviorment variable called OPENAI_API_KEY, set its value to your key.
 As for the elevenlabs key, go to BMOOS.py located in Important-Stuff and change the "set_api_key" value (line 15) to your elevenlabs API Key.
+
+A BIG UPDATE TO THIS IS COMING IN THE NEAR FUTURE, FOR NOW, THE ELEVENLABS CODE IN BMOOS.py EXPECTS YOU TO MAKE THE BMO VOICE ON YOUR OWN, SOON THIS WILL CHANGE.
+
+STAY TUNED
