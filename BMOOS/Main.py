@@ -9,6 +9,8 @@ import sounddevice as sd
 import numpy as np
 import shutil
 set_api_key('YOUR ELEVENLABS KEY')
+script_directory = os.path.dirname(os.path.realpath(__file__))
+
 class DesktopSimulator:
     def __init__(self, root):
         self.root = root
