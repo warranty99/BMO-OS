@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='BMOOS',
-    version='0.3',
+    version='0.5',
     packages=['BMOOS'],
     install_requires=[
         'elevenlabs',
