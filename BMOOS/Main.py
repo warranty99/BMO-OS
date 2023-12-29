@@ -1,3 +1,4 @@
+import io
 from elevenlabs import generate, play
 from elevenlabs import voices, set_api_key
 from openai import OpenAI
@@ -10,6 +11,7 @@ import tkinter as tk
 import sounddevice as sd
 import numpy as np
 import shutil
+from urllib.request import urlopen  
 
 
 set_api_key('YOUR ELEVENLABS KEY')
@@ -27,7 +29,10 @@ class DesktopSimulator:
         # TO-DO change the file directories to the thing DONE!
 
         # CHANGE HERE
-        icon_image = tk.PhotoImage(file="https://media.discordapp.net/attachments/1187870559388840027/1190377438644019291/BMOOS_LOGO.png")
+        url_icon = "https://media.discordapp.net/attachments/1187870559388840027/1190377438644019291/BMOOS_LOGO.png"
+        image_bytes = urlopen(url_icon).read()
+        
+        icon_image = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
         resized_icon = self.resize_image(icon_image, (93, 112))
         root.iconphoto(True, resized_icon)
 
@@ -36,7 +41,11 @@ class DesktopSimulator:
         icon_label.lower()
 
         # CHANGE HERE
-        recycle_bin_icon = tk.PhotoImage(file="https://media.discordapp.net/attachments/1187870559388840027/1190377459795894343/bmo.exeIcon.gif")
+        # Use urlopen to open the image from the URL
+        url_recycle_bin = "https://media.discordapp.net/attachments/1187870559388840027/1190377459795894343/bmo.exeIcon.gif"
+        image_bytes = urlopen(url_recycle_bin).read()
+        # Use ImageTk to convert the image to a Tkinter-compatible format
+        recycle_bin_icon = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
