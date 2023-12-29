@@ -1,4 +1,6 @@
 # BMO-OS
+This is a public repository where i dump my BMO Robot Code (Adventure Time) So if any of you guys want you can make your own using my shitty code
+
 
 I DO NOT RECCOMEND USING IT BEFORE v1.0.0 WHICH IS COMING OUT SOON
 
