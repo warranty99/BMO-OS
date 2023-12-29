@@ -32,7 +32,7 @@ class DesktopSimulator:
 
         #CHANGE HERE
       
-        icon_image = tk.PhotoImage(file=r"C:\Users\Usuario\Desktop\gang shit\BMO\BMOOS LOGO.png")
+        icon_image = tk.PhotoImage(file=r"https://media.discordapp.net/attachments/1187870559388840027/1190377438644019291/BMOOS_LOGO.png")
         resized_icon = self.resize_image(icon_image, (93, 112))  
         root.iconphoto(True, resized_icon)
 
@@ -42,11 +42,11 @@ class DesktopSimulator:
         icon_label.lower()  
 
         
-        self.display_files()
+        #self.display_files()
 
         #CHANGE HERE
      
-        recycle_bin_icon = tk.PhotoImage(file=r"C:\Users\Usuario\Desktop\gang shit\BMO\bmo.exeIcon.gif")
+        recycle_bin_icon = tk.PhotoImage(file=r"https://media.discordapp.net/attachments/1187870559388840027/1190377459795894343/bmo.exeIcon.gif")
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
@@ -67,13 +67,13 @@ class DesktopSimulator:
         #CHANGE HERE
        
         if bmo_talking:
-            self.show_image(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO Faces\Talking.png")
+            self.show_image(r"https://media.discordapp.net/attachments/1187870559388840027/1190376979661324348/Talking.png")
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
             
     
         else:
-            self.show_image(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO Faces\Idle.png") 
+            self.show_image(r"https://media.discordapp.net/attachments/1187870559388840027/1190376962309505054/Idle.png") 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
@@ -170,30 +170,8 @@ class DesktopSimulator:
     def resize_image(self, image, size):
         return image.subsample(int(image.width() / size[0]), int(image.height() / size[1]))
 
-    def display_files(self):
-        #CHANGE HERE
-        files = os.listdir(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO OS Desktop")
-
-        #CHANGE HERE AS WELL
-        folder_size = (126, 102)  # Adjust the size as needed
-        folder_icon = tk.PhotoImage(file=r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO OS FOLDER.png")
-        resized_folder_icon = self.resize_image(folder_icon, folder_size)
-
-        
-        for file in files:
-            file_frame = tk.Frame(self.root, bg="#789F73")  # Frame to hold folder icon and text
-
-            # Pack the folder icon at the top of the frame
-            file_label = tk.Label(file_frame, image=resized_folder_icon, bg="#789F73")
-            file_label.image = resized_folder_icon
-            file_label.pack()
-
-            # Pack the file name label below the folder icon
-            file_name_label = tk.Label(file_frame, text=file, bg="#789F73", fg="white")
-            file_name_label.pack()
-
-            # Pack the frame with each file, adjusting padding as needed
-            file_frame.pack(side=tk.LEFT, padx=0, pady=0)
+    
+    
 
 if __name__ == "__main__":
     root = tk.Tk()
