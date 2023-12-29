@@ -26,31 +26,40 @@ class DesktopSimulator:
         root.geometry("480x320")
         root.resizable(False, False)
 
-        # TO-DO change the file directories to the thing DONE!
+        # TO-DO change the file directories to the thing
 
         # CHANGE HERE
+        # Use urlopen to open the image from the URL with error handling
         url_icon = "https://media.discordapp.net/attachments/1187870559388840027/1190377438644019291/BMOOS_LOGO.png"
-        image_bytes = urlopen(url_icon).read()
-        
-        icon_image = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
-        resized_icon = self.resize_image(icon_image, (93, 112))
-        root.iconphoto(True, resized_icon)
+        try:
+            image_bytes = urlopen(url_icon).read()
+            # Use ImageTk to convert the image to a Tkinter-compatible format
+            icon_image = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
+            resized_icon = self.resize_image(icon_image, (93, 112))
+            root.iconphoto(True, resized_icon)
+        except URLError as e:
+            print(f"Error fetching image from URL: {e}")
+            # Provide a default icon or handle the error as needed
 
         icon_label = tk.Label(root, image=resized_icon, bg="#789F73", bd=0, highlightthickness=0, width=200, height=200)
         icon_label.place(x=0, y=0)
         icon_label.lower()
 
         # CHANGE HERE
-        # Use urlopen to open the image from the URL
+        # Use urlopen to open the image from the URL with error handling
         url_recycle_bin = "https://media.discordapp.net/attachments/1187870559388840027/1190377459795894343/bmo.exeIcon.gif"
-        image_bytes = urlopen(url_recycle_bin).read()
-        # Use ImageTk to convert the image to a Tkinter-compatible format
-        recycle_bin_icon = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
-        resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
+        try:
+            image_bytes = urlopen(url_recycle_bin).read()
+            # Use ImageTk to convert the image to a Tkinter-compatible format
+            recycle_bin_icon = ImageTk.PhotoImage(Image.open(io.BytesIO(image_bytes)))
+            resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
+        except URLError as e:
+            print(f"Error fetching image from URL: {e}")
+            # Provide a default icon or handle the error as needed
+
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
         recycle_bin_button.place(x=25, y=25)
-
     def on_recycle_bin_click(self):
         bmo_talking = self.check_if_bmo_talking()
 
