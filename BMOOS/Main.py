@@ -9,7 +9,12 @@ import sounddevice as sd
 import numpy as np
 import shutil
 set_api_key('YOUR ELEVENLABS KEY')
+
 script_directory = os.path.dirname(os.path.realpath(__file__))
+substring_to_remove = "BMOOS"
+modified_directory = script_directory.replace(substring_to_remove, "")
+
+
 
 class DesktopSimulator:
     def __init__(self, root):
@@ -25,19 +30,19 @@ class DesktopSimulator:
 
         #CHANGE HERE
 
-        icon_image = tk.PhotoImage(file=r"C:\Users\Usuario\Desktop\gang shit\BMO\BMOOS LOGO.png")
-        resized_icon = self.resize_image(icon_image, (93, 112))  
+        icon_image = tk.PhotoImage(file=modified_directory+r"\IMAGES\BMOOS LOGO.png")
+        resized_icon = self.resize_image(icon_image, (93, 112))
         root.iconphoto(True, resized_icon)
 
 	@@ -42,11 +42,11 @@ def __init__(self, root):
         icon_label.lower()  
 
 
-        self.display_files()
+        
 
         #CHANGE HERE
 
-        recycle_bin_icon = tk.PhotoImage(file=r"C:\Users\Usuario\Desktop\gang shit\BMO\bmo.exeIcon.gif")
+        recycle_bin_icon = tk.PhotoImage(file=modified_directory+r"\IMAGES\BMOICON.gif")
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
@@ -45,13 +50,13 @@ class DesktopSimulator:
         #CHANGE HERE
 
         if bmo_talking:
-            self.show_image(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO Faces\Talking.png")
+            self.show_image(modified_directory+r"\IMAGES\TALKING.png)
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
 
         else:
-            self.show_image(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO Faces\Idle.png") 
+            self.show_image(modified_directory+r"\IMAGES\IDLE.png") 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
@@ -61,7 +66,7 @@ class DesktopSimulator:
 
     def display_files(self):
         #CHANGE HERE
-        files = os.listdir(r"C:\Users\Usuario\Desktop\gang shit\BMO\BMO OS Desktop")
+        files = os.listdir(modified_directory+r"\IMAGES")
 
         #CHANGE HERE AS WELL
         folder_size = (126, 102)  # Adjust the size as needed
