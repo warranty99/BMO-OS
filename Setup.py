@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='your-package-name',
+    name='Important-Stuff',
     version='0.1',
-    packages=['your_package'],
+    packages=['Important-Stuff'],
     install_requires=[
         'elevenlabs',
         'openai',
