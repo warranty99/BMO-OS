@@ -9,6 +9,7 @@ setup(
         'openai',
         'numpy',
         'sounddevice',
+        'pillow',
         #For now..
     ],
 )
