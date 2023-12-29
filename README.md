@@ -2,7 +2,7 @@
 This is a public repository where i dump my BMO Robot Code (Adventure Time) So if any of you guys want you can make your own using my shitty code
 
 
-I DO NOT RECCOMEND USING IT BEFORE v1.0.0 WHICH IS COMING OUT SOON
+I DO NOT RECCOMEND USING IT BEFORE v1.0.0 BECAUSE ITS BROKEN (for now)
 
 HOW TO USE:
 First off, you're gonna need a GPT API-KEY and an ELEVENLABS API-KEY, in this code i removed the keys, insert your own.
