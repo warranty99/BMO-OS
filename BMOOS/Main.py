@@ -30,7 +30,7 @@ class DesktopSimulator:
 
         #CHANGE HERE
 
-        icon_image = tk.PhotoImage(file=modified_directory+r"\IMAGES\BMOOS LOGO.png")
+        icon_image = tk.PhotoImage(file=script_directory+r"\IMAGES\BMOOS LOGO.png")
         resized_icon = self.resize_image(icon_image, (93, 112))
         root.iconphoto(True, resized_icon)
 
@@ -42,7 +42,7 @@ class DesktopSimulator:
 
         #CHANGE HERE
 
-        recycle_bin_icon = tk.PhotoImage(file=modified_directory+r"\IMAGES\BMOICON.gif")
+        recycle_bin_icon = tk.PhotoImage(file=script_directory+r"\IMAGES\BMOICON.gif")
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
@@ -50,13 +50,13 @@ class DesktopSimulator:
         #CHANGE HERE
 
         if bmo_talking:
-            self.show_image(modified_directory+r"\IMAGES\TALKING.png)
+            self.show_image(script_directory+r"\IMAGES\TALKING.png)
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
 
         else:
-            self.show_image(modified_directory+r"\IMAGES\IDLE.png") 
+            self.show_image(script_directory+r"\IMAGES\IDLE.png") 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
@@ -66,7 +66,7 @@ class DesktopSimulator:
 
     def display_files(self):
         #CHANGE HERE
-        files = os.listdir(modified_directory+r"\IMAGES")
+        files = os.listdir(script_directory+r"\IMAGES")
 
         #CHANGE HERE AS WELL
         folder_size = (126, 102)  # Adjust the size as needed
