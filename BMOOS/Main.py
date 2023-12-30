@@ -65,7 +65,7 @@ class DesktopSimulator:
         return image.subsample(int(image.width() / size[0]), int(image.height() / size[1]))
 
     def display_files(self):
-        #CHANGE HERE
+        #CHANGED HERE
         files = os.listdir(script_directory+r"\IMAGES")
 
         #CHANGE HERE AS WELL
