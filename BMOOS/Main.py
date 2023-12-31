@@ -73,13 +73,13 @@ class DesktopSimulator:
 
         # Display the appropriate image based on whether BMO is talking
         if bmo_talking:
-            self.show_image(script_directory+"\IMAGES\TALKING.png)
+            self.show_image(script_directory+"\IMAGES\TALKING.png")
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
             
     
         else:
-            self.show_image(script_directory+"\IMAGES\TALKING.png) 
+            self.show_image(script_directory+"\IMAGES\TALKING.png") 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
