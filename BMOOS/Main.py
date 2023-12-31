@@ -185,7 +185,7 @@ class DesktopSimulator:
 
         # Load the folder icon image and adjust its size
         folder_size = (126, 102)  # Adjust the size as needed
-        folder_icon = tk.PhotoImage(file=r"C:)
+        folder_icon = tk.PhotoImage(file=r"C:")
         resized_folder_icon = self.resize_image(folder_icon, folder_size)
         
 
