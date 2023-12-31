@@ -30,7 +30,7 @@ set_api_key('YOUR ELEVENLABS KEY') # << Right here, change this to your actual e
 ```
 Make sure to save as .py as `__init__.py`
 
-Next step, open Main.py in the same place as `__init__.py` with notepad or any other text changing software
+Next step, open  `Main.py` in the same place as `__init__.py` with notepad or any other text changing software
 
 ```py
 from elevenlabs import generate, play
