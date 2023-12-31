@@ -8,11 +8,11 @@ This is a public repository where i dump my BMO Robot Code (Adventure Time) So i
 All versions before v1.0.0 expect insane requirements that arent physically possible.
 
 ## Necessities:
-All libraries are installed in ´__init__.py´, however, to run the source code (will discuss later) you will need a python version beyond 3.8
+All libraries are installed in `__init__.py`, however, to run the source code (will discuss later) you will need a python version beyond 3.8
 
 ## How to use:
-First off, you will need to buy credit for the openai-api, and the elevenlabs api, links here: https://platform.openai.com/account/billing/overview https://elevenlabs.io/subscription
-Next step is downloading a version beyond v1.0.0 which is the only functional build, open ´__init__.py´ using notepad or any other text changing software and do the following:
+First off, you will need to buy credit for the openai-api, and the elevenlabs api, links https://platform.openai.com/account/billing/overview and here https://elevenlabs.io/subscription
+Next step is downloading a version beyond v1.0.0 which is the only functional build, open `__init__.py` using notepad or any other text changing software and do the following:
 
 ```py
 
@@ -28,9 +28,9 @@ from elevenlabs import clone, generate, play
 
 set_api_key('YOUR ELEVENLABS KEY') # << Right here, change this to your actual elevenlabs API key
 ```
-Make sure to save as .py as ´__init__.py´
+Make sure to save as .py as `__init__.py`
 
-Next step, open Main.py in the same place as ´__init__.py´ with notepad or any other text changing software
+Next step, open Main.py in the same place as `__init__.py` with notepad or any other text changing software
 
 ```py
 from elevenlabs import generate, play
@@ -68,5 +68,6 @@ Save changes and exit, make sure to double check if it saved.
 
 ## Final notes:
 
-This will probably be updated in more versions, happy coding everyone.
+If something doesnt work, add an issue using the template found in .github/ISSUE-TEMPLATES
+
 
