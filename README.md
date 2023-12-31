@@ -11,8 +11,8 @@ All versions before v1.0.0 expect insane requirements that arent physically poss
 All libraries are installed in `__init__.py`, however, to run the source code (will discuss later) you will need a python version beyond 3.8
 
 ## How to use:
-First off, you will need to buy credit for the openai-api, and the elevenlabs api, links https://platform.openai.com/account/billing/overview and here https://elevenlabs.io/subscription
-Next step is downloading a version beyond v1.0.0 which is the only functional build, open `__init__.py` using notepad or any other text changing software and do the following:
+First off, you will need to buy credit for the openai-api, and the elevenlabs api, links [here](https://platform.openai.com/account/billing/overview) and [here](https://elevenlabs.io/subscription) respectively.
+Next step is downloading the source code for the most recent version, when downloaded extract all and open `__init__.py` located inside the folder using notepad or any other text changing software and do the following:
 
 ```py
 
