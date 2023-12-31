@@ -8,19 +8,20 @@ This is a public repository where i dump my BMO Robot Code (Adventure Time) So i
 All versions before v1.0.0 expect insane requirements that arent physically possible.
 
 ## Necessities:
-All libraries are installed in `__init__.py´, however, to run the source code (will discuss later) you will need a python version beyond 3.8
+All libraries are installed in ´__init__.py´, however, to run the source code (will discuss later) you will need a python version beyond 3.8
 
 ## How to use:
 First off, you will need to buy credit for the openai-api, and the elevenlabs api, links here: https://platform.openai.com/account/billing/overview https://elevenlabs.io/subscription
 Next step is downloading a version beyond v1.0.0 which is the only functional build, open ´__init__.py´ using notepad or any other text changing software and do the following:
 
 ```py
+
+import subprocess
 subprocess.call(["pip", "install", "elevenlabs"])
 subprocess.call(["pip", "install", "openai"])
 subprocess.call(["pip", "install", "numpy"])
 subprocess.call(["pip", "install", "sounddevice"])
 
-import subprocess
 import os
 from elevenlabs import voices, set_api_key
 from elevenlabs import clone, generate, play
@@ -52,11 +53,11 @@ set_api_key('YOUR ELEVENLABS KEY') # << Right here, change this to your actual, 
 
 Make sure to save changes.
 
-To set up your OpenAi Key, create a new enviorement variable on your device called OPENAI_API_KEY, set its value to your key
+To set up your OpenAi Key, create a new environment variable on your device called OPENAI_API_KEY, set its value to your key
 
 Dont know how to create an environment variable? then buckle up partner, skip this part if you know how.
 
-# Creating an environment variable
+## Creating an environment variable
 
 To create an environment variable, simply double click on the "This pc" icon on your desktop or file explorer and click properties.
 This will open a settings tab, next, find the "Advanced settings" option, or something similar.
