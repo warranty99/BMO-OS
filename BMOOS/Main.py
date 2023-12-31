@@ -36,7 +36,7 @@ class DesktopSimulator:
         root.resizable(False, False)
 
         # Set the window icon to the resized BMOOS LOGO
-        icon_image = tk.PhotoImage(file=script_directory+r"\IMAGES\BMOOS LOGO")
+        icon_image = tk.PhotoImage(file=script_directory+"\IMAGES\BMOOS LOGO")
         resized_icon = self.resize_image(icon_image, (93, 112))  # Adjust the size as needed
         root.iconphoto(True, resized_icon)
 
@@ -51,7 +51,7 @@ class DesktopSimulator:
         # Add an "Exit" button at coordinates (10, 10)
 
         # Add a Recycle Bin icon at coordinates (30, 0)
-        recycle_bin_icon = tk.PhotoImage(file=script_directory+r"\IMAGES\BMOICON.gif")
+        recycle_bin_icon = tk.PhotoImage(file=script_directory+"\IMAGES\BMOICON.gif")
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
         recycle_bin_button.image = resized_recycle_bin_icon
@@ -73,13 +73,13 @@ class DesktopSimulator:
 
         # Display the appropriate image based on whether BMO is talking
         if bmo_talking:
-            self.show_image(script_directory+r"\IMAGES\TALKING.png)
+            self.show_image(script_directory+"\IMAGES\TALKING.png)
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
             
     
         else:
-            self.show_image(script_directory+r"\IMAGES\TALKING.png) 
+            self.show_image(script_directory+"\IMAGES\TALKING.png) 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
 
