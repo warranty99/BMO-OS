@@ -53,7 +53,7 @@ class DesktopSimulator:
         # Add an "Exit" button at coordinates (10, 10)
 
         # Add a Recycle Bin icon at coordinates (30, 0)
-        r-icon_image_path = os.path.join(script_directory, "IMAGES", "BMOICON.gif")
+        r_icon_image_path = os.path.join(script_directory, "IMAGES", "BMOICON.gif")
         recycle_bin_icon = tk.PhotoImage(file=r-icon_image_path)
         resized_recycle_bin_icon = self.resize_image(recycle_bin_icon, (60, 60))
         recycle_bin_button = tk.Button(root, image=resized_recycle_bin_icon, bd=0, highlightthickness=0, bg="#789F73", command=self.on_recycle_bin_click)
@@ -76,7 +76,7 @@ class DesktopSimulator:
 
         # Display the appropriate image based on whether BMO is talking
         if bmo_talking:
-            t-icon_image_path = os.path.join(script_directory, "IMAGES", "TALKING.png")
+            t_icon_image_path = os.path.join(script_directory, "IMAGES", "TALKING.png")
             
             self.show_image(t-icon_image_path)
             # self.bmo_speak("Hello World!")
@@ -84,7 +84,7 @@ class DesktopSimulator:
             
     
         else:
-            I-icon_image_path = os.path.join(script_directory, "IMAGES", "IDLE.png")
+            I_icon_image_path = os.path.join(script_directory, "IMAGES", "IDLE.png")
             self.show_image(I-icon_image_path) 
             # self.bmo_speak("Hello World!")
             self.ask_bmo("HI BMO!")
