@@ -1,11 +1,13 @@
-# Announcement
+# IMPORTANT
 First off, read this entirely, or else the code will not work, this is a gaurantee
 
-Secondly, read the security.md too, its very important
+Secondly, read the security.md too, its very important.
+
+Thirdly, im developing this robot as this project is alive, so right now it kinda works i guess but its very early beta, please understand that.
 
 ## Description
 This is a public repository where i dump my BMO Robot Code (Adventure Time) So if any of you guys want you can make your own using my shitty code
-All versions before v1.0.0 expect insane requirements that arent physically possible.
+All versions before v1.0.0 expect insane requirements that arent physically possible, just use the latest version
 
 ## Necessities:
 All libraries are installed in `__init__.py`, however, to run the source code (will discuss later) you will need a python version beyond 3.8
