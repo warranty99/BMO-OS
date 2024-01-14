@@ -152,7 +152,7 @@ class DesktopSimulator:
         print("self.bmo_speak process starting")
         audio = generate(
           text=text,
-          voice="BMO",
+          voice="GLADOS",
           model="eleven_multilingual_v2"
         )
 
