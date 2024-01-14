@@ -167,7 +167,7 @@ class DesktopSimulator:
         messages=[
             {
                 "role": "user",
-                "content": "You are BMO From Adventure Time, respond to the following prompt like BMO Would:" + prompt,
+                "content": "You are GladOS, respond as GladOS would to this prompt: " + prompt,
             },
         ])
         
