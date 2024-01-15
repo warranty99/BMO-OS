@@ -72,6 +72,11 @@ Find the "Add" button and click it.
 Name the variable "OPENAI_API_KEY" and set its value to your key.
 Save changes and exit, make sure to double check if it saved.
 
+## Executing
+
+Until the terminal bug is fixed, select the run as terminal option when rightclicking on the Main.py file.
+When the terminal opens, type the following command: `Python Main.py` or ``Python3 Main.py` if you're on windows or not.
+
 ## Final notes:
 
 If something doesnt work, add an issue using the template found in .github/ISSUE-TEMPLATES
