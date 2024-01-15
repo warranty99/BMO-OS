@@ -1,11 +1,13 @@
 # IMPORTANT
 First off, read this entirely, or else the code will not work, this is a gaurantee
 
-Secondly, read the security.md too, its very important.
+Secondly, read the security.md too, its very important
 
-Thirdly, im developing this robot as this project is alive, so right now it kinda works i guess but its very early beta, please understand that.
+Thirdly, im developing this robot as this project is alive, so right now it kinda works i guess but its very early beta, please understand that
 
 Fourthly, theres a GladOS potato form in the branch GladOS if you prefer that
+
+Fifthly, sometimes it only works on the console, this is being fixed, thank you for your patience
 
 ## Description
 This is a public repository where i dump my BMO Robot Code (Adventure Time) OR GLADOS So if any of you guys want you can make your own using my shitty code
