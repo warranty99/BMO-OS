@@ -14,7 +14,7 @@ This is a public repository where i dump my BMO Robot Code (Adventure Time) OR G
 All versions before v1.0.0 expect insane requirements that arent physically possible, just use the latest version
 
 ## Necessities:
-To install the libraries necessaries and create the BMO voice, double click on `__init__.py`.
+To install the libraries necessaries and create the BMO voice, double click on `__init__.py`, even though the console blabbers about some errors about Path, ignore them, it works without it, this step might take a while by the way.
 
 ## How to use:
 First off, you will need to buy credit for the openai-api, and the elevenlabs api, links [here](https://platform.openai.com/account/billing/overview) and [here](https://elevenlabs.io/subscription) respectively.
