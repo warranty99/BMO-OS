@@ -35,4 +35,6 @@ def ask_bmo(prompt):
         print("self.ask_bmo process complete.")
         bmo_speak(completion.choices[0].message.content)
         
-ask_bmo("Hey GlaDOS!")
+while True:
+    asked=input("ask > ")
+    ask_bmo(asked)    
