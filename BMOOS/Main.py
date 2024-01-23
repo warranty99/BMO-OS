@@ -10,7 +10,7 @@ substring_to_remove = "BMOOS"
 modified_directory = script_directory.replace(substring_to_remove, "")
 
 def bmo_speak(text):
-        print("self.bmo_speak process starting")
+        print("Generating Audio...")
         audio = generate(
           text=text,
           voice="GLADOS-NON-POTAT",
@@ -19,10 +19,10 @@ def bmo_speak(text):
 
         play(audio)
 
-        print("self.bmo_speak process complete.")
+        print("Done.")
     
 def ask_bmo(prompt):
-        print("self.ask_bmo process starting") 
+        print("Generating Text...") 
         
         completion = client.chat.completions.create(model="gpt-3.5-turbo",
         messages=[
@@ -32,7 +32,7 @@ def ask_bmo(prompt):
             },
         ])
         
-        print("self.ask_bmo process complete.")
+        print("Text Generated.")
         bmo_speak(completion.choices[0].message.content)
         
 while True:
