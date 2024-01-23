@@ -5,7 +5,7 @@ Secondly, read the security.md too, its very important
 
 Thirdly, im developing this robot as this project is alive, so right now it kinda works i guess but its very early beta, please understand that
 
-Fourthly, theres a GladOS potato form in the branch GladOS if you prefer that
+Fourthly, theres a GladOS form in the branch GladOS if you prefer that
 
 Fifthly, sometimes it only works on the console, this is being fixed, thank you for your patience
 
