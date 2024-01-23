@@ -5,9 +5,6 @@ Secondly, read the security.md too, its very important.
 
 Thirdly, im developing this robot as this project is alive, so right now it kinda works i guess but its very early beta, please understand that.
 
-Fourthly, this is the GladOS POTATO form, not the normal GladOS, so its trained on the POTATO voice lines, which means the quality is, POTATO-QUALITY, yes maybe ill make a GladOS non potato, I DONT KNOW!
-
-
 ## Description
 This is a public repository where i dump my BMO Robot Code (Adventure Time) OR GLADOS So if any of you guys want you can make your own using my shitty code
 All versions before v1.0.0 expect insane requirements that arent physically possible, just use the latest version
